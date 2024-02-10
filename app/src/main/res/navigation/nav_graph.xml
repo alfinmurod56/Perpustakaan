@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginActivity">
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.uts.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <action
+        android:id="@+id/action_LoginActivity_to_ListBookActivity"
+        app:destination="@id/listBookActivity" />
+
+    <activity
+        android:id="@+id/listBookActivity"
+        android:name="com.example.uts.ListBookActivity"
+        android:label="activity_list_book"
+        tools:layout="@layout/activity_list_book" />
+</navigation>
